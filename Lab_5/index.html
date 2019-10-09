@@ -277,11 +277,13 @@
       { "name": "Yemen", "code": "YE" },
       { "name": "Zambia", "code": "ZM" },
       { "name": "Zimbabwe", "code": "ZW" }
-    ]
-    // console.log("List of countries in the world", countries);
-
+    ]//END countries array
+    
+    /*This function displays 50 random country names*/
     function getNames () {
+      //note that I only iterate 50 times
       for (i=0; i<50; i++){
+        //getting a random number within the length of countries
         var randoNumber = Math.floor(Math.random()*countries.length);
         console.log(countries[randoNumber]["name"]);
       }//end for loop
